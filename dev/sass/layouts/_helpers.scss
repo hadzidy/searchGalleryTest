@@ -1,0 +1,22 @@
+$gris: gray;
+$blue: blue;
+html, body{
+	height: 100%;
+}
+body, html, input, h1, h2, div{
+	font-family: 'Rambla', sans-serif;
+	color: $gris;
+	margin: 0;
+
+}
+h1, h2, h3, h4, p{
+	margin: 0;
+}
+.total-centered{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}

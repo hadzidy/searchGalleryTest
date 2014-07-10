@@ -1,0 +1,10 @@
+.content.total-centered
+    input#search(placeholder="Buscar")
+    #resultados
+script#cars-template(type="text/template")
+    .auto-box
+        h3 {{model}} 
+        h4 {{index}}
+        img(src="{{thumb}}")
+        p Desde 
+        | ${{price}}

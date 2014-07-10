@@ -1,0 +1,48 @@
+
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+.content{
+	width: 960px;
+	height: 700px;
+	border: 1px solid gray;
+}
+
+#search{
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 800px;
+	height: 100px;
+	margin-top: 30px;
+	font-size: 85px;
+	color: $gris;
+	padding: 15px;
+	outline: none;
+	@include placeholder {
+		font-weight: bold;
+	}; 
+}
+#resultados{
+	width: 94%;
+	height: 70%;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	overflow: hidden;
+	font-family: 'Rambla', sans-serif;
+	color: $gris;
+}
+.auto-box{
+	margin-top: 42px;
+	width: 300.66px;
+	float: left;
+	h3{
+		color: $blue;
+	}
+}
